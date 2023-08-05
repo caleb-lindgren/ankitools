@@ -1,0 +1,48 @@
+# CC-CEDICT
+
+- Downloaded from <https://www.mdbg.net/chinese/export/cedict/cedict_1_0_ts_utf-8_mdbg.txt.gz> on 2 Aug 2023.
+- Parsed using parse_cedict.py in this directory to create cedict_parsed.tsv
+- My additions in cedict_additions.tsv
+
+# Unihan
+
+- Downloaded from <https://www.unicode.org/Public/UCD/latest/ucd/Unihan.zip> on 2 Aug 2023.
+- Fields of interest (see <https://www.unicode.org/reports/tr38/#N10260>)
+    - kDefinition
+    - kFrequency: "A rough frequency measurement for the character based on analysis of traditional Chinese USENET postings; characters with a kFrequency of 1 are the most common, those with a kFrequency of 2 are less common, and so on, through a kFrequency of 5."
+    - kHanyuPinlu: "Each entry is comprised of two pieces of data. The Hanyu Pinyin (HYPY) pronunciation(s) of the character. Immediately following the pronunciation, a numeric string appears in parentheses: for example, in “ā(392)” the numeric string “392” indicates the sum total of the frequencies of the pronunciations of the character as given in HYPLCD. Where more than one pronunciation exists, these are sorted by descending frequency, and the list elements are “space” delimited."
+    - kHanyuPinyin: "The 漢語拼音 Hànyǔ Pīnyīn reading(s) appearing in the edition of 《漢語大字典》 Hànyǔ Dà Zìdiǎn (HDZ) specified in the “kHanYu” property description (q.v.). Each location has the form “ABCDE.XYZ” (as in “kHanYu”); multiple locations for a given pīnyīn reading are separated by commas. The list of locations is followed by a colon, followed by a comma-separated list of one or more pīnyīn readings. Where multiple pīnyīn readings are associated with a given mapping, these are ordered as in HDZ (for the most part reflecting relative commonality)."
+    - kMandarin: "The most customary pīnyīn reading for this character. When there are two values, then the first is preferred for zh-Hans (CN) and the second is preferred for zh-Hant (TW). When there is only one value, it is appropriate for both."
+    - kRSUnicode: "The standard radical-stroke count for this character in the form “radical.additional strokes”. The radical is indicated by a number in the range (1..214) inclusive. An apostrophe (') after the radical indicates a simplified version of the given radical. The “additional strokes” value is the residual stroke-count, the count of all strokes remaining after eliminating all strokes associated with the radical. This field is also used for additional radical-stroke indices where either a character may be reasonably classified under more than one radical, or alternate stroke count algorithms may provide different stroke counts. The residual stroke count may be negative. This is because some characters (for example, U+225A9, U+29C0A) are constructed by removing strokes from a standard radical."
+    - kSemanticVariant: see <https://www.unicode.org/reports/tr38/#kSemanticVariant>
+    - kSimplifiedVariant: see <https://www.unicode.org/reports/tr38/#SCTC>
+    - kTang: "The Tang dynasty pronunciation(s) of this character, derived from or consistent with T’ang Poetic Vocabulary by Hugh M. Stimson, Far Eastern Publications, Yale University 1976. An asterisk indicates that the word or morpheme represented in toto or in part by the given character with the given reading occurs more than four times in the seven hundred poems covered."
+    - kTGHZ2013: "One or more Hànyǔ Pīnyīn readings as given in Tōngyòng Guīfàn Hànzì Zìdiǎn"
+    - kTotalStrokes: "The total number of strokes in the character (including the radical). When there are two values, then the first is preferred for zh-Hans (CN) and the second is preferred for zh-Hant (TW). When there is only one value, it is appropriate for both." See also <https://www.unicode.org/reports/tr38/#kAlternateTotalStrokes>
+    - kTraditionalVariant: see <https://www.unicode.org/reports/tr38/#SCTC>
+    - kXHC1983: "One or more Hànyǔ Pīnyīn readings as given in the Xiàndài Hànyǔ Cídiǎn"
+
+# Chinese characters decomposition (CCD)
+
+- Downloaded from <https://commons.wikimedia.org/wiki/User:Artsakenos/CCD-TSV> and manually extracted from HTML on 2 Aug 2023.
+- Graphical, not etymological decompositions
+
+# MoEDICT - g0v version (dict-revised.unicode.json)
+
+- Downloaded from <https://raw.githubusercontent.com/g0v/moedict-data/master/dict-revised.json> on 3 Aug 2023 and converted to Unicode using scripts and descriptions described at <https://github.com/g0v/moedict-webkit/blob/master/ENG-README.md#step-by-step-installation>
+
+# MoEDICT - Pleco version (MoEDict-05-cards.txt)
+
+- Downloaded from <http://www.mediafire.com/download/3j8un86dri4stjv/MoEDict-05-cards.txt> on 3 Aug 2023, see <https://github.com/alexhk90/Pleco-User-Dictionaries/tree/master/MoEDict> for documentation
+
+
+# Misc resources
+
+- Everything, including conversion to Zhuyin
+    - https://github.com/tsroten/dragonmapper see also https://dragonmapper.readthedocs.io/en/latest/index.html
+- Traditional/simplified conversion
+    - https://github.com/BYVoid/OpenCC
+- Characters to Pinyin conversion
+    - https://github.com/mozillazg/python-pinyin
+    - https://github.com/Language-Tools/pinyin-jyutping
+    - https://github.com/lxyu/pinyin

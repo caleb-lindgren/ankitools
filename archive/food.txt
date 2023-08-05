@@ -1,0 +1,375 @@
+牛肉	beef
+蘑菇	mushroom
+胡椒	black pepper
+豬肉	pork
+雞肉	chicken
+宮保雞丁	Kung Pao Chicken
+肉燥	dried meat
+蘿蔔	radish
+糕	cake
+荷包蛋	poached eggs
+蔥	onion
+蔥抓餅	Scallion Pancake
+燒餅油條	fried dough sticks
+燒餅	biscuits
+油條	fritters
+薯餅	Potato cake
+饅頭	Steamed bun
+飯糰	rice ball
+肉鬆	Meat floss
+素飯	vegetarian rice
+甜飯	sweet rice
+豬排	pork chops
+燻雞	smoked chicken
+鮪魚	tuna
+培根	bacon
+火腿	Ham
+起司	cheese
+卡啦	Kala
+漢堡	Hamburger
+總匯	summary
+香雞	Fragrant Chicken
+蔬果	fruits and vegetables
+百匯	Parkway
+冷	cold
+溫	temperature
+熱	hot
+豆漿	soy milk
+糖	sugar
+泡沫	Foam
+紅茶	black tea
+米漿	rice milk
+柳丁	Orange
+汁	juice
+鹽	Salt
+鹹	salty
+原味	Original
+蛋餅	Egg cake
+玉米	corn
+三明治	sandwich
+烤	bake
+土司	toast
+煎蛋	fried eggs
+果醬	jam
+草莓	strawberry
+藍莓	blueberry
+椰子	coconut
+蒜	garlic
+巧克力	chocolate
+抹茶	matcha
+花生	peanut
+奶油	cream
+厚片	Thick slices
+黑糖	brown sugar
+刨冰	shaved ice
+鳳梨	pineapple
+綠豆	green beans
+紅豆	red beans
+煉奶	condensed milk
+湯	Soup
+仙草	Grass jelly/Chinese mesona
+燒	burn
+雪花	snowflake
+芒果	mango
+芋頭	Taro
+水果	fruit
+豆花	bean curd
+任選	optional
+養生	keep in good health
+冬瓜	winter melon
+情人果	Valentine fruit
+青草茶	herbal tea
+草本茶	Herbal tea
+花草茶	Herbal tea
+藥草茶	herbal tea
+薄荷	Mint
+洛神花	Roselle
+梅子	plum
+菊花	chrysanthemum
+銀耳	tremella
+桃膠	peach gum
+桂圓	Longan
+萊姆	Lyme
+醋	vinegar
+阿薩姆紅茶	Assam tea
+茉莉花	jasmine
+烏龍茶	oolong tea
+冰鎮	iced
+鐵觀音	Tieguanyin
+金萱	Jin Xuan
+百香果	passion fruit
+青茶	oolong/green tea
+柳橙	orange
+橙子	orange
+柳丁	orange
+檸檬	lemon
+蘋果	apple
+鳳梨	pineapple
+菠蘿	Pineapple
+葡萄柚	grapefruit
+枸櫞	Citron
+西柚	grapefruit
+香泡樹	Cinnamon tree
+香櫞	citron
+柚子	Grapefruit
+土豆	Potato
+酥	Crisp
+馬鈴薯	potato
+甘蔗	sugar cane
+蒟蒻	Konjac
+珍珠	pearl
+蘆薈	aloe vera
+波霸	boba
+茶葉	tea
+小麥胚芽	wheat germ
+拿鐵	latté
+黑糖	brown sugar
+冬瓜	winter melon
+香蕉	banana
+情人果	green mango preserved in sugar
+奇異果	kiwi fruit
+苦瓜	Momordica charantia
+蜂蜜	Honey
+西瓜	watermelon
+紅蘿蔔	carrot
+梨子	pear
+芹菜	celery
+黃瓜	cucumber
+結冰	freeze
+混搭	mash up
+麥仔茶	barley tea
+薑	ginger
+紅棗	red dates
+話梅	Huamei
+愛玉	Aiyu
+釀	wine
+特調	special tune
+粉圓	Powder circle
+海陸	land and sea
+咖喱	curry
+加哩	Gary
+招牌	Shop sign
+泡菜	Pickle
+煨	simmer
+酸辣	hot and sour
+麻辣	Spicy
+雞腿	drumstick
+蛤蜊	clams
+芧	small chestnut
+原味	Original
+番茄	tomato
+筋	tendons
+叉燒	barbecued pork
+酸菜	sauerkraut
+泰國	Thailand
+乾	Dry
+拌麵	noodles
+芝麻	Sesame
+夾心	Sandwich
+海鮮	seafood
+沙茶	sand tea
+蔬菜	vegetable
+葷	Meat
+素	white
+南瓜	pumpkin
+絲瓜	loofah
+附	attached
+白肉	white meat
+燒烤	barbecue
+蝦	shrimp
+寬	Width
+冬粉	Winter noodles
+羊肉	mutton
+豆腐	Tofu
+豆皮	bean curd
+貢丸	Meatballs
+魚丸	Fish Ball
+餃子	dumpling
+魚板	fish plate
+蒲鉾	Kamaboko
+年糕	rice cake
+米血糕	rice blood cake
+Q	Q
+麻吉燒	Mochi Yaki
+麻糬	Mochi
+糯米糍	Nuomi
+鴨	duck
+鳥	bird
+魚卵	fish eggs
+臭豆腐	stinky tofu
+蟹肉	crab meat
+棒	Great
+甜不辣	sweet or not
+魚蛋	fish eggs
+黃金	golden/fried
+腸	intestinal
+花枝	flower branch
+芝心	Zhixin
+龍蝦	lobster
+沙拉	salad
+高麗菜	Cabbage
+捲心菜	cabbage
+小白菜	Chinese cabbage
+青江菜	Green Cabbage
+大陸妹	Fushan lettuce
+福山萵苣	Fushan lettuce
+杏鮑菇	Pleurotus eryngii
+金針菇	Flammulina velutipes
+茼萵菜	Crown daisy greens
+黑木耳	black fungus
+芋頭	taro
+玉米筍	baby corn
+酸橙	lime
+養樂多	Yakult
+桑椹	mulberry
+洛神花	Roselle
+可調	adjustable
+火龍果	pitaya
+番石榴	guava
+芭樂	guava
+豆沙	bean paste
+饅頭	Steamed bun
+枸杞	wolfberry
+雜糧	Cereals
+全麥	whole wheat
+壽桃	birthday peach
+鹽	salt
+鹹	salty
+鹹酥雞	Taiwanese style fried chicken
+魷魚	squid
+四季豆	green beans
+軟骨	cartilage
+薯條	fries
+柳葉	willow leaves
+豆乾	dried tofu
+地瓜	sweet potato
+糯米腸	Glutinous Rice Sausage
+大腸	the large intestine
+三寶	Sambo
+牛筋	beef tendon
+牛肚	Tripe
+牛腱	beef tendon
+精選	Featured
+蜀	Shu
+牛肉乾	Beef jerky
+烏龍麵	udon noodles
+醬油	soy sauce
+胡麻	flax
+古早	ancient
+酢	Vinegar
+風味	flavor
+榨菜	mustard
+肉絲	shredded pork
+餛飩	ravioli
+蛋花湯	egg drop soup
+水餃	Dumplings
+紅燒	Braised
+丼	dong4 bowl of steamed rice with toppings (loanword from Japanese "donburi")
+決明子	Cassia
+燙	hot
+青菜	Green vegetables
+溫泉蛋	slow cooked hotspring egg (onsen tamago)
+頂級	top
+冰凍	frozen
+雪碧	Sprite
+可樂	Cola
+利賓納	Ribena (blackcurrant soda)
+炒麵	fried noodles
+什錦	assorted
+豬肝	pork liver
+蛤仔	Manila clam
+鱔魚	eel
+中卷	Volumes
+下水	tripe or chitterlings
+梅子	plum
+海苔	seaweed
+粉	glass noodles
+墨西哥	Mexico
+迷迭香	rosemary
+濃	concentrated
+香	fragrant
+冷凍	freezing
+沖	rush
+美祿	Nestle Milo (chocolate drink powder)
+玫瑰	Rose
+蘇打	soda
+青澀	Sentimental
+剉冰	shaved ice
+煉乳	condensed milk
+系列	series
+布丁	pudding
+冷湯	cold soup
+豆花	bean curd
+肉燥	dried meat
+紅油	red oil
+滷味	lo mei
+拼盤	platter
+豆芽	bean sprouts
+韭菜	Chinese chives
+涼拌	Salad
+木須	Mushu
+排骨	Ribs
+炸雞	fried chicken
+捲餅	Burrito
+大滷麵	Big Braised Noodles
+淇淋	ice cream
+夏威夷	hawaii
+聖代	sundae
+湯圓	sweet dumpling
+麥角	ergot
+雪花	snowflake
+西米露	Similu
+椰奶	coconut milk
+糯米	Sticky rice
+燕麥	oat
+紫米	purple rice
+木瓜	pawpaw
+蓮子	lotus seeds
+大麥	barley
+刈包	cut bag
+割包	cutting bag
+桂花	Osmanthus flower
+普洱茶	Pu'er tea
+四季茶	Four Seasons Tea (Taiwanese brand of oolong)
+椰果	Nata de coco
+碳燒	roasted oolong tea
+皇家奶茶	Royal Milk Tea (tea steeped in mixture of water and milk)
+黑磚茶	black brick tea
+翡翠	emerald
+冰沙	smoothie
+酪梨	avocado (Tw luo4li2)
+芋泥	Taro paste
+金柑	Kumquat
+金橘	kumquat
+金桔	Kumquat
+白毫	pekoe
+高山青茶	Alpine green tea
+甘茶	sweet tea
+烏梅	Ume
+虎紋黑糖奶	Tiger pattern brown sugar milk
+濃醇	concentrated, full-bodied, strong
+可可	cocoa
+濃郁	full-bodied
+莢	pod
+香草	vanilla
+豆奶	soy milk
+菇	mushroom
+雪菜	pickled cabbage
+山楂	hawthorn
+白油	white oil
+竹筍	bamboo shoots
+攪和	stir up
+烤麩	Baked cake
+麩殼	chaff
+辣椒	chili
+乾絲	dry silk
+抄手	wonton/dumpling soup
+豬耳朵	pig ear
+涼皮	Liangpi
+油燜	Braised
+糖醋	sweet and sour
+酸豆	Capers
+豆角	beans
+海帶	kelp
+拌麵	noodles
+山楂洛神花茶	Hawthorn Hibiscus Tea

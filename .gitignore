@@ -1,0 +1,5 @@
+dict/*
+
+!dict/README
+!dict/cedict_additions.tsv
+!dict/parse_cedict.py

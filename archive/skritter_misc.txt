@@ -1,0 +1,62 @@
+玖	玖	jiu3	(black stone); nine (banker's anti-fraud number)
+拾	拾	shi2	pick up; tidy up; collect; ten (banker's anti-fraud numeral)
+佰	佰	bai3	hundred (banker's anti-fraud numeral)
+仟	仟	qian1	numeral thousand (used for 千 in writing checks to prevent mistakes and forgery）
+万	萬	wan4	ten thousand
+亿	億	yi4	one hundred million (100,000,000)
+加	加	jia1	add; increase; plus
+减	減	jian3	subtract; decrease; reduce; cut
+乘	乘	cheng2	to ride; to mount; make use of; multiply
+除以	除以	chu2yi3	divided by (a number)
+等于	等於	deng3yu2	(mathematics) equal to
+跨领域	跨領域	kua4ling3yu4	interdisciplinary
+登入	登入	deng1ru4	log in; enter data
+删除	刪除	shan1chu2	to delete
+蒸汽机车	蒸汽機車	zheng1qi4ji1che1	steam locomotive
+蒸汽火车	蒸汽火車	zheng1qi4huo3che1	steam locomotive (also 蒸汽機車)
+模型	模型	mo2xing2	model; pattern
+机械加工	機械加工	ji1xie4jia1gong1	machining
+切削	切削	qie1xiao1	to cut; cutting; machining
+金属	金屬	jin1shu3	metal
+退款	退款	tui4kuan3	refund
+退货	退貨	tui4huo4	to return merchandise
+退货退钱	退貨退錢	tui4huo4tui4qian2	return merchandise for a refund
+陡	陡	dou3	steep; suddenly
+钥匙	鑰匙	yao4shi5	key
+日出	日出	ri4chu1	sunrise
+仙气	仙氣	xian1qi4	ethereal quality; magical breath; magic feeling (from the spirits)
+耐用	耐用	nai4yong4	durable
+清洁	清潔	qing1jie2	to clean; clean; unpolluted; purity
+捷运	捷運	jie2yun4	subway; Metro Rapid Transit (Taipei's subway system)
+笔画	筆畫	bi3hua4	strokes of a Chinese character
+喫	喫	chi1	eat; consume; take (variant)
+群组	群組	qun2zu3	groupchat (Tw); group; cohort; cluster
+硬币	硬幣	ying4bi4	coin
+脚踏车	腳踏車	jiao3ta4che1	(Taiwan usage) bicycle
+替	替	ti4	substitute for; take the place of; on behalf of; decline/wane (literary)
+文房四宝	文房四寶	wen2fang2 si4bao3	the four treasures of the study (brush, ink stick, ink stone, and paper);  the essentials of calligraphy and scholarship (idiom)
+毛笔	毛筆	mao2bi3	writing brush
+墨	墨	mo4	ink
+纸	紙	zhi3	paper
+砚台	硯台	yan4tai2	ink-stone
+宣纸	宣紙	xuan1zhi3	high quality paper from Xuancheng, Anhui
+笔架	筆架	bi3jia4	pot for holding calligraphy brushes when not in use
+笔挂	筆掛	bi3gua4	calligraphy brush hanger
+镇纸	鎮紙	zhen4zhi3	paperweight
+笔洗	筆洗	bi3xi3	tray for washing brushes
+图章	圖章	tu2zhang1	seal; stamp; name chop
+印泥	印泥	yin4ni2	red ink paste used for seals; ink pad
+篆书	篆書	zhuan4shu1	seal script (calligraphy)
+隶书	隸書	li4shu1	clerical/official script (calligraphy)
+行书	行書	xing2shu1	running/semi-cursive script (calligraphy)
+草书	草書	cao3shu1	draft/cursive script (calligraphy)
+楷书	楷書	kai3shu1	regular script (calligraphy)
+零	零	ling2	zero
+壹	壹	yi1	one (banker's anti-fraud numeral)
+贰	貳	er4	two (banker's anti-fraud numeral)
+参	參	can1, shen1, san1	join; take part in; refer to; three (banker's anti-fraud numeral); ginseng
+肆	肆	si4	four (banker's anti-fraud numeral); reckless; shop; store
+伍	伍	wu3	five (banker's anti-fraud numeral); partner; military service
+陆	陸	lu4, liu4	land; continent; mainland; six (banker's anti-fraud numeral)
+柒	柒	qi1	seven; (banker's anti-fraud numeral)
+捌	捌	ba1	eight (banker's anti-fraud numeral)
