@@ -1,5 +1,6 @@
-dict/*
+dict/MoEDICT/*
+dict/Unihan/
+dict/ccd.tsv
+dict/cedict_1_0_ts_utf-8_mdbg.txt
 
-!dict/README
-!dict/cedict_additions.tsv
-!dict/parse_cedict.py
+!dict/MoEDICT/MoEDict-05-cards.txt
