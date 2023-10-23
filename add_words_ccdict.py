@@ -42,30 +42,71 @@ def add_entry(word, comb, adds):
     pinyin_match = r"\b[A-Za-z][a-z]*[1-5]\b"
     pinyin_replace_nums = lambda x: transcriptions.to_pinyin(x[0]) if transcriptions.is_pinyin(x[0]) else x[0]
 
-    defi = input(f"{word} not found. Please enter definition, any pinyin must be space-delimited: ")
+    try:
+        defi = input(f"{word} not found. Please enter definition, any pinyin must be space-delimited: ")
+    except UnicodeDecodeError:
+        print("UnicodeDecodeError")
+        defi = ""
     while True:
         defi = re.sub(pinyin_match, pinyin_replace_nums, defi)
-        defi_success = input(f"Definition will be created as '{defi}'. Approve? (y/n): ")
-        if defi_success == "y":
+        try:
+            defi_success = input(f"Definition will be created as '{defi}'. Approve? ([y]/n): ")
+        except UnicodeDecodeError:
+            print("UnicodeDecodeError")
+            print("UnicodeDecodeError")
+            defi_success = "n"
+        if defi_success in ["", "y"]:
             break
-        defi = input(f"Please re-enter definition for {word}, any pinyin must be space-delimited: ")
+        try:
+            defi = input(f"Please re-enter definition for {word}, any pinyin must be space-delimited: ")
+        except UnicodeDecodeError:
+            print("UnicodeDecodeError")
+            defi = ""
 
-    py = input(f"Please enter space-delimited pinyin for {word}: ")
+    try:
+        py = input(f"Please enter space-delimited pinyin for {word}: ")
+    except UnicodeDecodeError:
+        print("UnicodeDecodeError")
+        py = ""
     while True:
         py = re.sub(pinyin_match, pinyin_replace_nums, py)
-        py_success = input(f"Pinyin will be entered as '{py}'. Approve? (y/n): ")
-        if py_success == "y":
+        try:
+            py_success = input(f"Pinyin will be entered as '{py}'. Approve? ([y]/n): ")
+        except UnicodeDecodeError:
+            print("UnicodeDecodeError")
+            py_success = "n"
+        if py_success in ["", "y"]:
             break
-        py = input(f"Please re-enter space-delimited pinyin for {word}: ")
-
+        try:
+            py = input(f"Please re-enter space-delimited pinyin for {word}: ")
+        except UnicodeDecodeError:
+            print("UnicodeDecodeError")
+            py = ""
 
     alt_type = "simplified" if INPUT_CHAR_TYPE == "trad" else "traditional"
-    alt = input(f"Please enter {alt_type} characters for {word}: ")
+    alt_error = False
+    try:
+        alt = input(f"Please enter {alt_type} characters for {word}: ")
+    except UnicodeDecodeError:
+        alt_error = True
+        print("UnicodeDecodeError")
     while True:
-        alt_success = input(f"{alt_type.title()} characters will be entered as '{alt}'. Approve? (y/n): ")
-        if alt_success == "y":
-            break
-        alt = input(f"Please re-enter {alt_type} characters for {word}: ")
+        if not alt_error:
+            if alt == "":
+                alt = word
+            try:
+                alt_success = input(f"{alt_type.title()} characters will be entered as '{alt}'. Approve? ([y]/n): ")
+            except UnicodeDecodeError:
+                print("UnicodeDecodeError")
+                alt_success = "n"
+            if alt_success in ["", "y"]:
+                break
+        alt_error = False
+        try:
+            alt = input(f"Please re-enter {alt_type} characters for {word}: ")
+        except UnicodeDecodeError:
+            print("UnicodeDecodeError")
+            alt_error = True
 
     new_entry = pd.DataFrame({
         "trad": [word if INPUT_CHAR_TYPE == "trad" else alt],
@@ -102,13 +143,25 @@ if dups_list.any():
     for dup in dups[INPUT_CHAR_TYPE].unique():
         sel = dups.loc[dups[INPUT_CHAR_TYPE] == dup, :].reset_index(drop=False)
         with pd.option_context('display.max_rows', None, 'display.min_rows', None, "display.unicode.east_asian_width", True):
-            keep_idx = int(input(f"Duplicates found for {dup}:\n\n{sel[['trad', 'simp', 'py', 'def']]}\n\nPlease enter the number of which duplicate to keep: "))
+            try:
+                keep_idx = int(input(f"Duplicates found for {dup}:\n\n{sel[['trad', 'simp', 'py', 'def']]}\n\nPlease enter the number of which duplicate to keep: "))
+            except:
+                print("ERROR!!")
+                keep_idx = 0
             while True:
                 keep = sel.iloc[[keep_idx], :]
-                keep_success = input(f"This entry will be kept:\n\n{keep[['trad', 'simp', 'py', 'def']]}\n\nApprove? (y/n): ")
-                if keep_success == "y":
+                try:
+                    keep_success = input(f"This entry will be kept:\n\n{keep[['trad', 'simp', 'py', 'def']]}\n\nApprove? ([y]/n): ")
+                except UnicodeDecodeError:
+                    print("UnicodeDecodeError")
+                    keep_success = "n"
+                if keep_success in ["", "y"]:
                     break
-                keep_idx = int(input(f"Please re-enter the number of which duplicate to keep: "))
+                try:
+                    keep_idx = int(input(f"Please re-enter the number of which duplicate to keep: "))
+                except:
+                    print("ERROR!!")
+                    keep_idx = 0
 
         keep_orig_idcs.append(sel.loc[keep_idx, "orig_idx"])
 
@@ -118,12 +171,24 @@ if dups_list.any():
 output_list = words.to_csv(sep="\t", index=False).split("\n")
 
 # Get tags
-tags = input("Please enter space-delimited tags to assign to these cards: ")
+try:
+    tags = input("Please enter space-delimited tags to assign to these cards: ")
+except UnicodeDecodeError:
+    print("UnicodeDecodeError")
+    tags = ""
 while True:
-    tags_success = input("Tags will be:\n" + "\n".join(tags.split(" ")) + "\nApprove? (y/n): ")
-    if tags_success == "y":
+    try:
+        tags_success = input("Tags will be:\n" + "\n".join(tags.split(" ")) + "\nApprove? ([y]/n): ")
+    except UnicodeDecodeError:
+        print("UnicodeDecodeError")
+        tags_success = "n"
+    if tags_success in ["", "y"]:
         break
-    tags = input("Please re-enter space-delimited tags to assign to these cards: ")
+    try:
+        tags = input("Please re-enter space-delimited tags to assign to these cards: ")
+    except UnicodeDecodeError:
+        print("UnicodeDecodeError")
+        tags = ""
     
 
 # Add headers
