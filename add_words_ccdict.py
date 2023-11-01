@@ -10,6 +10,7 @@ CCDICT_PATH = os.path.join("dict", "MoEDICT", "MoEDict-05-Simp03-cards.txt")
 CCDICT_ADDITIONS_PATH = os.path.join("dict", "ccdict_additions.tsv")
 
 INPUT_CHAR_TYPE = "trad" # else "simp"
+ALT_CHAR_TYPE = "simp" if INPUT_CHAR_TYPE == "trad" else "trad"
 
 # Load words to add and check for duplicates
 file_path = sys.argv[1]
@@ -83,10 +84,10 @@ def add_entry(word, comb, adds):
             print("UnicodeDecodeError")
             py = ""
 
-    alt_type = "simplified" if INPUT_CHAR_TYPE == "trad" else "traditional"
+    alt_pretty = "traditional" if ALT_CHAR_TYPE == "trad" else "simplified"
     alt_error = False
     try:
-        alt = input(f"Please enter {alt_type} characters for {word}: ")
+        alt = input(f"Please enter {alt_pretty} characters for {word}: ")
     except UnicodeDecodeError:
         alt_error = True
         print("UnicodeDecodeError")
@@ -95,7 +96,7 @@ def add_entry(word, comb, adds):
             if alt == "":
                 alt = word
             try:
-                alt_success = input(f"{alt_type.title()} characters will be entered as '{alt}'. Approve? ([y]/n): ")
+                alt_success = input(f"{alt_pretty.title()} characters will be entered as '{alt}'. Approve? ([y]/n): ")
             except UnicodeDecodeError:
                 print("UnicodeDecodeError")
                 alt_success = "n"
@@ -103,7 +104,7 @@ def add_entry(word, comb, adds):
                 break
         alt_error = False
         try:
-            alt = input(f"Please re-enter {alt_type} characters for {word}: ")
+            alt = input(f"Please re-enter {alt_pretty} characters for {word}: ")
         except UnicodeDecodeError:
             print("UnicodeDecodeError")
             alt_error = True
@@ -168,6 +169,26 @@ if dups_list.any():
     orig_drop = dups.index[~dups.index.isin(keep_orig_idcs)]
     words = words.drop(index=orig_drop)
 
+# Don't have duplicate characters in ALT_CHAR_TYPE column
+new_alts = []
+for idx in words.index:
+    new_alt = ""
+    diff_found = False
+    for i, char in enumerate(words.loc[idx, ALT_CHAR_TYPE]):
+        if char == words.loc[idx, INPUT_CHAR_TYPE][i]:
+            new_alt += "～"
+        else:
+            new_alt += char
+            diff_found = True
+    if diff_found:
+        new_alt = f"（{new_alt}）"
+    else:
+        new_alt = ""
+    new_alts.append(new_alt)
+
+words = words.assign(**{ALT_CHAR_TYPE: new_alts})
+
+# Export flashcard rows
 output_list = words.to_csv(sep="\t", index=False).split("\n")
 
 # Get tags
@@ -189,7 +210,6 @@ while True:
     except UnicodeDecodeError:
         print("UnicodeDecodeError")
         tags = ""
-    
 
 # Add headers
 output_list[0] = "#columns:" + output_list[0]
