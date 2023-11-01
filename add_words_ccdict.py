@@ -181,7 +181,7 @@ for idx in words.index:
             new_alt += char
             diff_found = True
     if diff_found:
-        new_alt = f"（{new_alt}）"
+        new_alt = f"<br>（{new_alt}）"
     else:
         new_alt = ""
     new_alts.append(new_alt)
