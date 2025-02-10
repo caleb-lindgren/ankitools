@@ -125,10 +125,7 @@ entry_added = False
 for word in words.values:
     if word not in ccdict_comb[INPUT_CHAR_TYPE].values:
         ccdict_comb, additions = add_entry(word, ccdict_comb, additions)
-        entry_added = True
-
-if entry_added:
-    additions.to_csv(CCDICT_ADDITIONS_PATH, sep="\t", index=False)
+        additions.to_csv(CCDICT_ADDITIONS_PATH, sep="\t", index=False) # Save it after every word so we don't lose progress
 
 # Get the words we want
 words = ccdict_comb.set_index(INPUT_CHAR_TYPE).loc[words, :].reset_index(drop=False)
@@ -186,7 +183,24 @@ for idx in words.index:
         new_alt = ""
     new_alts.append(new_alt)
 
-words = words.assign(**{ALT_CHAR_TYPE: new_alts})
+words = words.assign(**{
+	ALT_CHAR_TYPE + "f": words[ALT_CHAR_TYPE],
+	ALT_CHAR_TYPE: new_alts,
+})
+
+# Add Zhuyin
+#words = words.assign(zy=["　".join([transcriptions.to_zhuyin(syl) for syl in py.split(" ")]) for py in words.py])
+
+zy = []
+for py in words.py:
+    try:
+        zy.append("　".join([transcriptions.to_zhuyin(syl) for syl in py.split(" ")]))
+    except ValueError as e:
+        print(py)
+        raise e
+words = words.assign(zy=zy)
+
+words = words[["trad", "simp", ALT_CHAR_TYPE + "f", "py", "zy", "def"]]
 
 # Export flashcard rows
 output_list = words.to_csv(sep="\t", index=False).split("\n")
